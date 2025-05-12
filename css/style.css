@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  background: #0c0d0d;
+  color: #fafcfc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header {
+  width: 100%;
+  background: #0c0d0d;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  color: #fafcfc;
+  font-size: 2.5rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav ul li {
+  margin: 5px 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s;
+  padding: 10px 20px;
+  border: 2px solid #f00;
+  border-radius: 5px;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  color: #f00;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.jogue-agora {
+  background: #f00;
+  color: white !important;
+}
+
+.jogue-agora:hover {
+  background: #c00 !important;
+  color: white !important;
+}
+
+footer {
+  background: #0d0d0d;
+  padding: 20px;
+  margin-top: auto;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  color: #fafcfc;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: static;
+    transform: none;
+  }
+  
+  header nav ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    width: auto;
+    padding: 10px 25px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav ul li a {
+    width: 90%;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.instagram-icon {
+  color: white !important; 
+  transition: all 0.3s ease; 
+}
+
+.instagram-icon:hover {
+  color: #f00 !important; 
+  transform: scale(1.1); 
+}
+
+.fa-instagram {
+  color: white !important;
+}
+
+.fa-instagram:hover {
+  color: #f00 !important;
+}
