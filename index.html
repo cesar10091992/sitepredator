@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo Predator</title>
+
+  <link rel="shortcut icon" href="imagens/icone.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio id="musica" autoplay muted loop>
+    <source src="audio/predator.MP3" type="audio/mpeg">
+    Seu navegador não suporta o player de áudio.
+  </audio>
+
+  <header>
+    <a href="index.html" title="Home">
+      <img src="imagens/logo.jpeg" alt="Predator" title="Predator">
+    </a>
+
+    <h1 class="PREDATOR">PREDATOR</h1>
+
+    <button id="playBtn" onclick="ativarSom()">🔊 Ligar Som</button>
+
+    <nav>
+      <ul>
+        <li><a href="predator/index.html" title="Jogar agora" target="_blank"><i class="fas fa-gamepad"></i> Jogue Agora</a></li>
+        <li><a href="index.html" title="Home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="contato.html" title="Contato"><i class="fas fa-envelope"></i> Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <img src="imagens/banner.jpg" alt="Banner" title="Banner">
+  </div>
+
+  <footer>
+    <p>Todos os direitos reservados</p>
+    <p>
+      <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    function ativarSom() {
+      const audio = document.getElementById('musica');
+      audio.muted = false;
+      audio.play();
+      document.getElementById('playBtn').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
